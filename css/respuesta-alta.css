@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.Rcontainer{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: gray;
+}
+
+.Rbox{
+    border: 1px solid black;
+    width:70%;
+    height:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(219, 208, 208);
+}
+
+.cerrar{
+    border: 1px solid black;
+    width: 80px;
+    text-align:center;
+    text-decoration:none;
+    background-color:rgb(254, 253, 253);
+    color:rgb(4, 4, 4);
+}
+
+.cerrar:hover{
+    background-color:rgb(74, 42, 200);
+    color:rgb(247, 244, 244);
+    cursor: pointer;
+}
