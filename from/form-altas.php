@@ -44,7 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = $_POST['nombre'];
     $fe = $_POST['fecha'];
 
-    $resultado = insertar($use, $cla, $ape, $nom, $fe,);
+
+    $resultado = insertar($use, $cla, $ape, $nom, $fe, );
 
     if ($resultado) {
         echo "Usuario registrado exitosamente.";
