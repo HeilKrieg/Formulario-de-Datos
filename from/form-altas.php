@@ -32,3 +32,24 @@
 		</div>
 	</form>
 </div>
+
+<?php
+include("usuario.php");
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Obtener datos del formulario
+    $use = $_POST['usuario'];
+    $cla = $_POST['clave'];
+    $ape = $_POST['apellido'];
+    $nom = $_POST['nombre'];
+    $fe = $_POST['fecha'];
+
+    $resultado = insertar($use, $cla, $ape, $nom, $fe,);
+
+    if ($resultado) {
+        echo "Usuario registrado exitosamente.";
+    } else {
+        echo "Error al registrar el usuario.";
+    }
+}
+?>

@@ -17,3 +17,19 @@
 		</div>
 	</form>
 </div>
+
+<?php
+include("usuario.php");
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $userName = $_POST['usuario'];
+
+    $resultado = deleteUser($userName);
+
+    if ($resultado) {
+        echo "Usuario eliminado exitosamente.";
+    } else {
+        echo "Error al eliminar el usuario.";
+    }
+}
+?>
